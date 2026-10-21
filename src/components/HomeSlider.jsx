@@ -295,7 +295,7 @@ export default function HomeSlider({ onNavigate }) {
 
   return (
     <div className="w-full bg-[#001733]">
-      
+
       {/* 1. HERO SECTION (Exact Oxford Layout Replica) */}
       <section className="relative w-full min-h-[580px] md:min-h-[660px] lg:min-h-[720px] flex items-end overflow-hidden pb-12 sm:pb-16 pt-28 sm:pt-36">
         <div className="absolute inset-0 z-0">
@@ -304,32 +304,23 @@ export default function HomeSlider({ onNavigate }) {
             alt="Sant Kripal Singh Institute of Law Gate & Campus"
             className="w-full h-full object-cover object-center"
           />
-          {/* Clean image on top with color gradient only at the bottom for text readability */}
           <div className="absolute inset-0 bg-gradient-to-t from-[#001733] via-[#001733]/60 via-40% to-transparent to-75%" />
           <div className="absolute inset-0 bg-gradient-to-r from-[#001733]/70 via-[#001733]/20 via-50% to-transparent to-80%" />
         </div>
 
         <div className="relative z-10 max-w-[1440px] mx-auto px-4 sm:px-8 lg:px-12 w-full">
           <div className="max-w-2xl lg:max-w-3xl space-y-4">
-            
-            {/* Oxford-style Yellow Date/Category Badge */}
             <div>
               <span className="inline-block bg-[#E8C252] text-[#002147] font-semibold text-xs sm:text-[13px] px-2.5 py-1 rounded-[2px] tracking-wide">
                 14 October 2026 | Admissions & Affiliations
               </span>
             </div>
-
-            {/* Oxford-style Serif Headline */}
             <h1 className="font-serif text-3xl sm:text-4xl md:text-5xl lg:text-[52px] font-normal text-white leading-[1.12] tracking-tight">
               Sant Kripal Singh Institute of Law – Premier Legal Excellence in Bundelkhand
             </h1>
-
-            {/* Oxford-style Subtitle */}
             <p className="text-white/95 text-base sm:text-lg lg:text-[19px] font-normal max-w-xl leading-relaxed">
               Affiliated to Bundelkhand University, Jhansi & approved by Bar Council of India (BCI).
             </p>
-
-            {/* Oxford-style Cyan Action Button */}
             <div className="pt-2">
               <button
                 type="button"
@@ -345,7 +336,7 @@ export default function HomeSlider({ onNavigate }) {
         </div>
       </section>
 
-      {/* 2. COURSE SEARCH BAR */}
+      {/*COURSE*/}
       <section className="bg-[#002147] border-t border-b border-[#003366] py-10 px-4 sm:px-8 lg:px-12">
         <div className="max-w-[1400px] mx-auto flex flex-col lg:flex-row items-start lg:items-center justify-between gap-8">
           <div className="lg:max-w-md">
@@ -402,8 +393,6 @@ export default function HomeSlider({ onNavigate }) {
           </div>
         </div>
       </section>
-
-      {/* 3. 3-IMAGE CARDS SECTION */}
       <section className="bg-[#001733] py-12 px-4 sm:px-8 lg:px-12 border-b border-[#002855]">
         <div className="max-w-[1400px] mx-auto grid grid-cols-1 md:grid-cols-3 gap-6">
           <div
@@ -474,7 +463,7 @@ export default function HomeSlider({ onNavigate }) {
         </div>
       </section>
 
-      {/* 4. LATEST NOTIFICATIONS SECTION */}
+      {/*NOTIFICATIONS */}
       <section className="bg-[#EBECEE] py-14 px-4 sm:px-8 lg:px-12 relative overflow-hidden">
         <div className="max-w-[1400px] mx-auto relative z-10">
           <div className="flex items-center justify-between mb-8">
@@ -509,9 +498,8 @@ export default function HomeSlider({ onNavigate }) {
                   </div>
                 </div>
 
-                <h3 className={`font-serif text-[17px] text-[#002147] font-medium leading-snug mt-3 mb-3 group-hover:text-[#00508f] transition ${
-                  item.isUnderlined ? 'underline underline-offset-2' : ''
-                }`}>
+                <h3 className={`font-serif text-[17px] text-[#002147] font-medium leading-snug mt-3 mb-3 group-hover:text-[#00508f] transition ${item.isUnderlined ? 'underline underline-offset-2' : ''
+                  }`}>
                   {item.title}
                 </h3>
 
@@ -531,7 +519,7 @@ export default function HomeSlider({ onNavigate }) {
         </div>
       </section>
 
-      {/* 5. STUDYING AT SKSIL / ACADEMIC OVERVIEW */}
+      {/*STUDYING AT SKSIL*/}
       <section className="bg-[#D9E1EB] py-14 px-4 sm:px-8 lg:px-12 relative overflow-hidden border-t border-[#ccd7e4]">
         <div className="max-w-[1400px] mx-auto relative z-10">
           <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 mb-8">
@@ -563,9 +551,8 @@ export default function HomeSlider({ onNavigate }) {
                   />
                 </div>
 
-                <h3 className={`font-serif text-2xl text-[#002147] font-normal mb-3 group-hover:text-[#00508f] transition ${
-                  item.isUnderlined ? 'underline underline-offset-2' : ''
-                }`}>
+                <h3 className={`font-serif text-2xl text-[#002147] font-normal mb-3 group-hover:text-[#00508f] transition ${item.isUnderlined ? 'underline underline-offset-2' : ''
+                  }`}>
                   {item.title}
                 </h3>
 
@@ -578,7 +565,7 @@ export default function HomeSlider({ onNavigate }) {
         </div>
       </section>
 
-      {/* 6. UNIQUE CAREER OPPORTUNITIES */}
+      {/* UNIQUE CAREER OPPORTUNITIES */}
       <section className="bg-[#E4ECF4] py-14 px-4 sm:px-8 lg:px-12 relative overflow-hidden border-t border-[#d2dfec]">
         <div className="max-w-[1400px] mx-auto relative z-10">
           <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 mb-8">
@@ -623,7 +610,7 @@ export default function HomeSlider({ onNavigate }) {
         </div>
       </section>
 
-      {/* 7. PROMO BANNER: LEGAL AID & AWARENESS */}
+      {/*LEGAL AID & AWARENESS */}
       <section className="bg-[#EBECEE] py-10 px-4 sm:px-8 lg:px-12">
         <div className="max-w-[1400px] mx-auto">
           <div className="bg-[#002147] rounded-lg overflow-hidden shadow-xl grid grid-cols-1 lg:grid-cols-12 items-center">
@@ -659,7 +646,7 @@ export default function HomeSlider({ onNavigate }) {
         </div>
       </section>
 
-      {/* 8. RECENT BLOG ARTICLES CAROUSEL */}
+      {/* RECENT BLOG ARTICLES CAROUSEL */}
       <section className="bg-[#E2ECF7] py-14 px-4 sm:px-8 lg:px-12 relative overflow-hidden border-t border-[#d0dfef]">
         <div className="max-w-[1400px] mx-auto">
           <h2 className="font-serif text-3xl sm:text-4xl text-[#002147] font-normal tracking-tight mb-8">
@@ -695,9 +682,8 @@ export default function HomeSlider({ onNavigate }) {
                   key={dot}
                   type="button"
                   onClick={() => setDiscoverSlide(dot)}
-                  className={`w-2.5 h-2.5 rounded-full transition-all ${
-                    discoverSlide === dot ? 'bg-[#002147] w-3' : 'bg-stone-400/60'
-                  }`}
+                  className={`w-2.5 h-2.5 rounded-full transition-all ${discoverSlide === dot ? 'bg-[#002147] w-3' : 'bg-stone-400/60'
+                    }`}
                   aria-label={`Slide ${dot + 1}`}
                 />
               ))}
@@ -725,7 +711,7 @@ export default function HomeSlider({ onNavigate }) {
         </div>
       </section>
 
-      {/* 9. SKSIL EXCELLENCE & ACHIEVEMENTS */}
+      {/* SKSIL EXCELLENCE & ACHIEVEMENTS */}
       <section className="bg-[#E4ECF4] py-14 px-4 sm:px-8 lg:px-12 relative overflow-hidden border-t border-[#d2dfec]">
         <div className="max-w-[1400px] mx-auto relative z-10">
           <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 mb-8">
@@ -775,9 +761,8 @@ export default function HomeSlider({ onNavigate }) {
                   </div>
                 )}
 
-                <h3 className={`font-serif text-2xl text-[#002147] font-normal mb-2 leading-snug group-hover:text-[#00508f] transition ${
-                  item.isUnderlined ? 'underline underline-offset-2' : ''
-                }`}>
+                <h3 className={`font-serif text-2xl text-[#002147] font-normal mb-2 leading-snug group-hover:text-[#00508f] transition ${item.isUnderlined ? 'underline underline-offset-2' : ''
+                  }`}>
                   {item.title}
                 </h3>
 
@@ -790,7 +775,7 @@ export default function HomeSlider({ onNavigate }) {
         </div>
       </section>
 
-      {/* 10. HONORS & TOPPERS SPOTLIGHT */}
+      {/* HONORS & TOPPERS SPOTLIGHT */}
       <section className="bg-[#EBECEE] py-14 px-4 sm:px-8 lg:px-12 relative overflow-hidden border-t border-stone-300">
         <div className="max-w-[1400px] mx-auto relative z-10">
           <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 mb-8">
@@ -825,9 +810,8 @@ export default function HomeSlider({ onNavigate }) {
                   </div>
                 </div>
 
-                <h3 className={`font-serif text-[17px] text-[#002147] font-medium leading-snug mt-3 mb-3 group-hover:text-[#00508f] transition ${
-                  item.isUnderlined ? 'underline underline-offset-2' : ''
-                }`}>
+                <h3 className={`font-serif text-[17px] text-[#002147] font-medium leading-snug mt-3 mb-3 group-hover:text-[#00508f] transition ${item.isUnderlined ? 'underline underline-offset-2' : ''
+                  }`}>
                   {item.title}
                 </h3>
 
@@ -847,7 +831,7 @@ export default function HomeSlider({ onNavigate }) {
         </div>
       </section>
 
-      {/* 11. EXPLORE THE INSTITUTE */}
+      {/*  EXPLORE THE INSTITUTE */}
       <section className="bg-[#D9E1EB] py-14 px-4 sm:px-8 lg:px-12 relative overflow-hidden border-t border-[#ccd7e4]">
         <div className="max-w-[1400px] mx-auto relative z-10">
           <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 mb-8">
@@ -879,9 +863,8 @@ export default function HomeSlider({ onNavigate }) {
                   />
                 </div>
 
-                <h3 className={`font-serif text-2xl text-[#002147] font-normal mb-3 group-hover:text-[#00508f] transition ${
-                  item.isUnderlined ? 'underline underline-offset-2' : ''
-                }`}>
+                <h3 className={`font-serif text-2xl text-[#002147] font-normal mb-3 group-hover:text-[#00508f] transition ${item.isUnderlined ? 'underline underline-offset-2' : ''
+                  }`}>
                   {item.title}
                 </h3>
 
@@ -894,7 +877,7 @@ export default function HomeSlider({ onNavigate }) {
         </div>
       </section>
 
-      {/* 12. LAW PROGRAMS & INSPIRATION */}
+      {/* LAW PROGRAMS & INSPIRATION */}
       <section className="bg-[#E4ECF4] py-14 px-4 sm:px-8 lg:px-12 relative overflow-hidden border-t border-[#d2dfec]">
         <div className="max-w-[1400px] mx-auto relative z-10">
           <h2 className="font-serif text-3xl sm:text-4xl text-[#002147] font-normal tracking-tight mb-8">
@@ -916,9 +899,8 @@ export default function HomeSlider({ onNavigate }) {
                   />
                 </div>
 
-                <h3 className={`font-serif text-2xl text-[#002147] font-normal mb-3 leading-snug group-hover:text-[#00508f] transition ${
-                  item.isUnderlined ? 'underline underline-offset-2' : ''
-                }`}>
+                <h3 className={`font-serif text-2xl text-[#002147] font-normal mb-3 leading-snug group-hover:text-[#00508f] transition ${item.isUnderlined ? 'underline underline-offset-2' : ''
+                  }`}>
                   {item.title}
                 </h3>
 
