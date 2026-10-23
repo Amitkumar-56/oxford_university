@@ -144,6 +144,66 @@ export const ROUTE_SEO = {
     description: 'In-depth legal commentaries on Supreme Court judgments, constitutional reforms, and criminal statutes.',
     keywords: 'law blog India, case law commentary, legal writeups',
   },
+  '/blog-details/ugc-equity-regulations:-reform-or-risk': {
+    title: 'UGC Equity Regulations: Reform or Risk? | SKSIL Legal Blog',
+    description: 'Critical constitutional analysis of the 2026 UGC Equity Regulations under Articles 14, 15, and 21 by Asst. Prof. Varun Rai.',
+    keywords: 'UGC Equity Regulations, Article 14, Article 15, Article 21, constitutional law, SKSIL Banda',
+  },
+  '/blog-details/the-legal-implications-of-environmental-justice-in-the-context-of-human-rights': {
+    title: 'The Legal Implications of Environmental Justice in Context of Human Rights | SKSIL',
+    description: 'Right to a healthy and safe environment, Stockholm Convention, Rio Declaration, and Article 21 Indian jurisprudence by Asst. Prof. Pradip Kumar.',
+    keywords: 'environmental justice, human rights, Article 21, Stockholm Convention, SKSIL Banda',
+  },
+  '/blog-details/judicial-activism-or-judicial-adventurism:-a-constitutional-perspective': {
+    title: 'Judicial Activism or Judicial Adventurism: A Constitutional Perspective | SKSIL',
+    description: 'Examining the fine constitutional balance between judicial activism and separation of powers by Asst. Prof. Varun Rai Saxena.',
+    keywords: 'judicial activism, judicial adventurism, separation of powers, Basic Structure doctrine, SKSIL Banda',
+  },
+  '/blog-details/अधिवक्ता-और-न्यायाधीश-काला-कोट-एवं-सफेद-बैंड-क्यों-पहनते-है': {
+    title: 'अधिवक्ता और न्यायाधीश काला कोट एवं सफेद बैंड क्यों पहनते है? | SKSIL Banda',
+    description: 'जानिए वकालत में काले कोट और सफेद बैंड का 700 साल पुराना इतिहास, कानूनी तर्क और 1961 एडवोकेट एक्ट पर विशेष लेख।',
+    keywords: 'काला कोट इतिहास, एडवोकेट काला कोट, सफेद बैंड, एडवोकेट्स एक्ट 1961, SKSIL Banda',
+  },
+  '/blog-details/digital-transformation-in-legal-education': {
+    title: 'Digital Transformation in Legal Education | SKSIL Banda',
+    description: 'AI in legal research, virtual moot courts, and how 87% of law students are embracing tech in law school.',
+    keywords: 'digital transformation law, AI in legal research, virtual moot court, legal tech SKSIL',
+  },
+  '/blog-details/public-interest-litigation-(pil)-history-importance': {
+    title: 'Public Interest Litigation (PIL) : History & Importance | SKSIL Banda',
+    description: 'लोकहित वाद (PIL) का ऐतिहासिक उद्भव, कपिला हिंगोरानी का योगदान, और भारतीय संविधान में सामाजिक न्याय।',
+    keywords: 'लोकहित वाद, जनहित याचिका, PIL history, Kapila Hingorani, Hussainara Khatoon, SKSIL',
+  },
+  '/blog-details/विश्व-उपभोक्ता-अधिकार-दिवस': {
+    title: 'विश्व उपभोक्ता अधिकार दिवस (World Consumer Rights Day) | SKSIL Banda',
+    description: 'विश्व उपभोक्ता अधिकार दिवस का इतिहास, 15 मार्च का महत्व, उपभोक्ता संरक्षण अधिनियम 2019 और डिजिटल अधिकारों की संपूर्ण जानकारी।',
+    keywords: 'विश्व उपभोक्ता अधिकार दिवस, World Consumer Rights Day, उपभोक्ता संरक्षण अधिनियम 2019, Consumer Rights SKSIL',
+  },
+  '/blog-details/ll.b.-का-महत्व': {
+    title: 'LL.B. का महत्व - क्यों चुनें वकालत में अपना भविष्य? | SKSIL Banda',
+    description: 'जानिए LL.B. पाठ्यक्रम का महत्व, समाज में वकीलों की भूमिका, और भारतीय न्यायप्रणाली में करियर व सेवा के अवसर।',
+    keywords: 'LLB का महत्व, law career India, why study law, legal education Bundelkhand, SKSIL',
+  },
+  '/blog-details/natural-law-theory-in-indian-jurisprudence': {
+    title: 'Natural Law Theory in Indian Jurisprudence | SKSIL Banda',
+    description: 'Exploration of Natural Law Theory, Dharma, principles of natural justice (Audi Alteram Partem), and Articles 14 & 21.',
+    keywords: 'Natural Law Theory, Indian Jurisprudence, Dharma, Principles of Natural Justice, Article 21, SKSIL Banda',
+  },
+  '/blog-details/protecting-consumer-autonomy-in-digital-markets:-a-legal-and-regulatory-perspective': {
+    title: 'Protecting Consumer Autonomy in Digital Markets: Legal & Regulatory Perspective | SKSIL',
+    description: 'Analysis of digital market consumer autonomy, dark patterns, CCPA guidelines 2023, and digital antitrust challenges in India.',
+    keywords: 'Consumer Autonomy, Digital Markets, Dark Patterns, CCPA Guidelines, Consumer Protection India, SKSIL Banda',
+  },
+  '/blog-details/life-style-and-society:-a-new-vision': {
+    title: 'Life Style and Society: A New Vision | SKSIL Banda',
+    description: 'Examining the interplay between changing lifestyle trends, societal norms, and emerging constitutional rights in contemporary India.',
+    keywords: 'Life style and society, constitutional sociology, fundamental rights, personal liberty, SKSIL Banda',
+  },
+  '/blog-details/judicial-review-of-administrative-action-in-bharat': {
+    title: 'Judicial Review of Administrative Action in Bharat | SKSIL Banda',
+    description: 'Constitutional doctrine of Judicial Review in Bharat, Articles 32, 136, 226, Wednesbury unreasonableness, and rule of law.',
+    keywords: 'Judicial Review Bharat, Administrative Action, Article 32, Article 226, Wednesbury Principle, SKSIL Banda',
+  },
   '/contact-us': {
     title: 'Contact Us - Campus Address & Helpline | SKSIL Banda',
     description: 'Get in touch with Sant Kripal Singh Institute of Law, Banda. Campus address, helpline phone numbers, and location map.',
@@ -164,8 +224,15 @@ export function useSEO() {
   const location = useLocation();
 
   useEffect(() => {
-    const currentPath = location.pathname.toLowerCase().replace(/\/$/, '') || '/';
-    const seoData = ROUTE_SEO[currentPath] || ROUTE_SEO['/'];
+    const rawPath = location.pathname.toLowerCase().replace(/\/$/, '') || '/';
+    let decodedPath = rawPath;
+    try {
+      decodedPath = decodeURIComponent(rawPath);
+    } catch {
+      // keep rawPath
+    }
+
+    const seoData = ROUTE_SEO[decodedPath] || ROUTE_SEO[rawPath] || ROUTE_SEO['/'];
 
     // 1. Update Title in Browser Tab
     document.title = seoData.title;

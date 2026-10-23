@@ -1,6 +1,7 @@
 import React from 'react';
 import { useNavigate, Link } from 'react-router-dom';
 import { MapPin, Phone, Mail, ChevronRight, Scale } from 'lucide-react';
+import sksilEmblem from '../assets/image/sksil_emblem.png';
 
 const INFO_ABOUT = [
   { name: 'About SKSIL', path: '/about' },
@@ -31,6 +32,7 @@ const QUICK_LINKS = [
   { name: 'Events & Seminars', path: '/notifications/events' },
   { name: 'Law Library & E-Resources', path: '/studying-at-sksil/library' },
   { name: 'Moot Court & Legal Aid', path: '/studying-at-sksil/moot-court' },
+  { name: 'Privacy Policy', path: '/privacy-policy' },
   { name: 'Contact Campus', path: '/contact-us' },
 ];
 
@@ -47,15 +49,19 @@ export default function Footer() {
       <div className="bg-[#002147] py-8 border-b border-[#002c5c]">
         <div className="max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row items-center justify-between gap-6">
           <div className="flex items-center space-x-3 text-left">
-            <div className="w-10 h-10 rounded-full bg-[#001733] border border-white/60 flex items-center justify-center shrink-0">
-              <Scale className="w-5 h-5 text-white" />
+            <div className="w-12 h-12 rounded-full bg-[#001733] border border-white/60 overflow-hidden flex items-center justify-center shrink-0 shadow-md">
+              <img
+                src={sksilEmblem}
+                alt="SKSIL Emblem"
+                className="w-full h-full object-cover scale-105"
+              />
             </div>
             <div>
               <p className="font-serif text-lg font-bold text-white tracking-wide leading-tight">
                 SANT KRIPAL SINGH INSTITUTE OF LAW
               </p>
               <p className="text-xs text-blue-200">
-                Affiliated to Bundelkhand University, Jhansi (College Code: 797) & Approved by BCI
+                Affiliated to Bundelkhand University, Jhansi (College Code: 797) &amp; Approved by BCI
               </p>
             </div>
           </div>

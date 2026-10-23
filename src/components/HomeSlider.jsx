@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 import { ChevronRight, ChevronLeft, Search } from 'lucide-react';
 
 import heroGateImg from '../assets/image/sksil_gate_campus.jpg';
@@ -23,12 +24,47 @@ import blog4 from '../assets/image/blog1747044490.jpeg';
 import inspirationImg from '../assets/image/inspiration11738402799.png';
 
 export default function HomeSlider({ onNavigate }) {
+  const navigate = useNavigate();
   const [courseType, setCourseType] = useState('ballb');
   const [searchQuery, setSearchQuery] = useState('');
   const [discoverSlide, setDiscoverSlide] = useState(0);
 
+  const routeMap = {
+    'home': '/',
+    'why-study-law': '/studying-at-sksil/why-study-law',
+    'courses': '/courses/ballb',
+    'ballb': '/courses/ballb',
+    'llb': '/courses/llb',
+    'llm': '/courses/llm',
+    'rules': '/studying-at-sksil/rules',
+    'college-life': '/studying-at-sksil/college-life',
+    'methodology': '/studying-at-sksil/methodology',
+    'library': '/studying-at-sksil/library',
+    'moot-court': '/studying-at-sksil/moot-court',
+    'about': '/about',
+    'inspiration': '/about/inspiration',
+    'secretary-message': '/about/secretary-message',
+    'director-message': '/about/director-message',
+    'accreditation': '/about/accreditation',
+    'gallery': '/about/gallery',
+    'apply': '/admissions/apply',
+    'eligibility': '/admissions/eligibility',
+    'fees': '/admissions/fees',
+    'contact': '/contact-us',
+    'notifications': '/notifications',
+    'events': '/notifications/events',
+    'blogs': '/blogs',
+    'exam-schedule': '/notifications/exam-schedule',
+    'past-year-papers': '/notifications/past-year-papers',
+    'privacy-policy': '/privacy-policy',
+  };
+
   const handleNav = (key) => {
-    if (onNavigate) onNavigate(key);
+    if (onNavigate) {
+      onNavigate(key);
+    }
+    const target = routeMap[key] || (key.startsWith('/') ? key : `/${key}`);
+    navigate(target);
     window.scrollTo({ top: 0, behavior: 'smooth' });
   };
 

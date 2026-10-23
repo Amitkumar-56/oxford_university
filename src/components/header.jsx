@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import { useNavigate, Link } from 'react-router-dom';
 import { ChevronDown, Menu, X, Scale } from 'lucide-react';
+import sksilLogo from '../assets/image/sksil_official_logo.jpg';
+import sksilEmblem from '../assets/image/sksil_emblem.png';
 
 export default function Header() {
   const [activeDropdown, setActiveDropdown] = useState(null);
@@ -84,18 +86,24 @@ export default function Header() {
           <Link
             to="/"
             onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
-            className="bg-[#002147] border border-white/30 rounded-md px-3 py-2 flex items-center space-x-2.5 shadow-lg hover:border-white hover:bg-[#002d61] cursor-pointer active:scale-95 transition text-left"
+            className="bg-[#002147] border border-white/30 rounded-md px-2.5 py-1.5 sm:px-3 sm:py-2 flex items-center space-x-2.5 sm:space-x-3 shadow-lg hover:border-white hover:bg-[#002d61] cursor-pointer active:scale-95 transition text-left"
             title="Sant Kripal Singh Institute of Law - Return to Home"
           >
-            <div className="w-9 h-9 sm:w-10 sm:h-10 shrink-0 border border-white/90 rounded-full flex items-center justify-center bg-[#001733] shadow-inner">
-              <Scale className="w-5 h-5 text-amber-300" />
+            {/* High-Resolution Emblem */}
+            <div className="w-10 h-10 sm:w-11 sm:h-11 shrink-0 rounded-full border border-white/80 overflow-hidden bg-[#001733] flex items-center justify-center shadow-md">
+              <img
+                src={sksilEmblem}
+                alt="SKSIL Emblem"
+                className="w-full h-full object-cover scale-105"
+              />
             </div>
 
-            <div className="flex flex-col">
-              <span className="font-serif text-[12px] sm:text-[14px] font-bold tracking-[0.08em] text-white leading-tight uppercase">
+            {/* Crystal-Clear HD Typography */}
+            <div className="flex flex-col justify-center">
+              <span className="font-serif text-[13px] sm:text-[15px] lg:text-[16px] font-bold tracking-[0.06em] text-white leading-tight uppercase drop-shadow-sm">
                 SANT KRIPAL SINGH
               </span>
-              <span className="font-serif text-[10px] sm:text-[11px] font-semibold tracking-[0.08em] text-blue-200 leading-tight uppercase">
+              <span className="font-serif text-[10px] sm:text-[11px] lg:text-[12px] font-semibold tracking-[0.14em] text-[#00c5ff] leading-tight uppercase mt-0.5">
                 INSTITUTE OF LAW
               </span>
             </div>
