@@ -57,6 +57,43 @@ export default function HomeSlider({ onNavigate }) {
     'exam-schedule': '/notifications/exam-schedule',
     'past-year-papers': '/notifications/past-year-papers',
     'privacy-policy': '/privacy-policy',
+    'disc-1': '/blog-details/NATURAL-LAW-THEORY-IN-INDIAN-JURISPRUDENCE',
+    'disc-2': '/blog-details/Protecting-Consumer-Autonomy-in-Digital-Markets:-A-Legal-and-Regulatory-Perspective',
+    'disc-3': '/blog-details/Judicial-Review-of-Administrative-Action-in-Bharat',
+    'disc-4': '/blog-details/Digital-Transformation-in-Legal-Education',
+    'career-paths': '/studying-at-sksil/why-study-law',
+    'excellence': '/about/accreditation',
+    'legal-aid': '/studying-at-sksil/college-life',
+    'admissions': '/admissions/overview',
+    // Section item cards mappings
+    'news-1': '/notifications',
+    'news-2': '/notifications/exam-schedule',
+    'news-3': '/notifications',
+    'news-4': '/notifications',
+    'make-courses': '/courses/ballb',
+    'make-colleges': '/studying-at-sksil/college-life',
+    'make-applying': '/admissions/apply',
+    'make-access': '/studying-at-sksil/college-life',
+    'grad-start': '/studying-at-sksil/why-study-law',
+    'grad-courses': '/studying-at-sksil/why-study-law',
+    'grad-depts': '/studying-at-sksil/why-study-law',
+    'grad-funding': '/studying-at-sksil/why-study-law',
+    'ex-campaign': '/about/gallery',
+    'ex-climate': '/studying-at-sksil/library',
+    'ex-health': '/about',
+    'ex-society': '/studying-at-sksil/college-life',
+    'spot-1': '/about/gallery',
+    'spot-2': '/about/gallery',
+    'spot-3': '/about/gallery',
+    'spot-4': '/about/gallery',
+    'exp-colleges': '/studying-at-sksil/moot-court',
+    'exp-divisions': '/about',
+    'exp-bodleian': '/studying-at-sksil/library',
+    'exp-jobs': '/studying-at-sksil/college-life',
+    'study-ug': '/courses/ballb',
+    'study-grad': '/courses/llb',
+    'study-lifelong': '/about/inspiration',
+    'study-students': '/students-portal',
   };
 
   const handleNav = (key) => {
@@ -177,21 +214,25 @@ export default function HomeSlider({ onNavigate }) {
   const discoverCards = [
     {
       id: 'disc-1',
+      link: '/blog-details/NATURAL-LAW-THEORY-IN-INDIAN-JURISPRUDENCE',
       image: blog1,
       text: 'Natural Law Theory in Indian Jurisprudence – Constitutional Evolution.',
     },
     {
       id: 'disc-2',
+      link: '/blog-details/Protecting-Consumer-Autonomy-in-Digital-Markets:-A-Legal-and-Regulatory-Perspective',
       image: blog2,
       text: 'Protecting Consumer Autonomy in Digital Markets: A Legal & Regulatory Perspective.',
     },
     {
       id: 'disc-3',
+      link: '/blog-details/Judicial-Review-of-Administrative-Action-in-Bharat',
       image: blog3,
       text: 'Judicial Review of Administrative Action in Bharat – Fundamental Safeguards.',
     },
     {
       id: 'disc-4',
+      link: '/blog-details/Digital-Transformation-in-Legal-Education',
       image: blog4,
       text: 'Digital Transformation and Technology in Modern Legal Education & Practice.',
     },
@@ -696,7 +737,7 @@ export default function HomeSlider({ onNavigate }) {
               <div
                 key={idx}
                 className="relative h-64 sm:h-72 rounded-lg overflow-hidden shadow-md group cursor-pointer"
-                onClick={() => handleNav(card.id)}
+                onClick={() => handleNav(card.link || card.id)}
               >
                 <img
                   src={card.image}
